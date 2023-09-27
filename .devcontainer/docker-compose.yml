@@ -1,0 +1,9 @@
+services:
+  dev:
+    image: mcr.microsoft.com/devcontainers/javascript-node:20-bookworm
+    init: true
+    command:
+      - sleep
+      - inf
+    environment:
+      - MUST_INJECT=${MUST_INJECT}
